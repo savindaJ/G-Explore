@@ -1,15 +1,12 @@
 import { Text, View } from "react-native";
+import HeaderText from "@/components/Header/HeaderText";
+import StorySection from "@/components/story/StorySection";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this.</Text>
+    <View>
+      <HeaderText />
+      <StorySection />
     </View>
   );
 }
