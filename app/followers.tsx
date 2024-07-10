@@ -1,8 +1,11 @@
 import NavBar from "@/components/app-bar/NavBar";
 import HeaderText from "@/components/Header/HeaderText";
+import { useNavigation } from "expo-router";
+import axios from "axios";
 import {
   Avatar,
   Box,
+  Button,
   FlatList,
   Heading,
   HStack,
@@ -30,7 +33,7 @@ export default function followers() {
         justifyContent={"space-around"}
       >
         <Text fontWeight={700} fontSize={20} textAlign={"center"}>
-          Followers
+          Followers.
         </Text>
         <Text fontWeight={700} fontSize={20} textAlign={"center"}>
           Following
@@ -210,6 +213,27 @@ const Example = () => {
                 >
                   {item.recentText}
                 </Text>
+              </VStack>
+              <VStack>
+                <Button
+                onPress={()=>{
+                  axios.get('https://api.coindesk.com/v1/bpi/currentprice.json').then((res)=>{
+                    console.log(res.data)
+                  }).catch((err)=>{
+                    console.log(err)
+                  });
+                }}
+                position={'absolute'}
+                  m={"auto"}
+                  size="sm"
+                  variant="outline"
+                  _dark={{
+                    borderColor: "muted.50",
+                  }}
+                  borderColor="muted.800"
+                >
+                  Follow
+                </Button>
               </VStack>
               <Spacer />
               <Text
