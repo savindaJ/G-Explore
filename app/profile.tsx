@@ -1,3 +1,4 @@
+import NavBar from "@/components/app-bar/NavBar";
 import { Avatar, Box, FlatList, Image, Text, View } from "native-base";
 import React from "react";
 import { Button, StyleSheet, TouchableOpacity } from "react-native";
@@ -120,14 +121,13 @@ export default function profile() {
           style={styles.button}
           onPress={() => {
             alert("Button pressed!");
-            console.log("Button pressed!");
           }}
         >
           <Text style={styles.buttonText}>Videos</Text>
         </TouchableOpacity>
       </Box>
 
-      <Box h={400} w={"100%"} mt={5}>
+      <Box h={360} w={"100%"} mt={5}>
         <FlatList
           numColumns={3}
           p={2}
@@ -156,6 +156,7 @@ export default function profile() {
         />
         ;
       </Box>
+      <NavBar />
     </View>
   );
 }
@@ -263,11 +264,5 @@ const imageList = [
     image:
       "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
-  {
-    id: 5,
-    title: "Image Title 5",
-    content: "Image Content 5",
-    image:
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  },
+  
 ];
