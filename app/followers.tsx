@@ -65,7 +65,7 @@ export default function followers() {
         />
       </Box>
       <Text fontWeight={"bold"} fontSize={18} p={3}>
-        All Followers.
+        All Followers
       </Text>
       <Box w={"90%"} m={"auto"}>
         <Example />

@@ -7,11 +7,11 @@ import { View } from "native-base";
 
 export default function Index() {
   return (
-      <View w={'100vw'} h={'100vh'}>
-        <HeaderText />
-        <StorySection />
-        <PostSection />
-        <NavBar />  
-      </View>
+    <View w={"100vw"} h={"100vh"}>
+      <HeaderText />
+      <StorySection />
+      <PostSection />
+      <NavBar />
+    </View>
   );
 }

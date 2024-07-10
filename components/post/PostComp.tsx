@@ -36,7 +36,9 @@ export default function PostConp(prop: any) {
         <FontAwesome name="ellipsis-h" size={20} color="black" />
       </Flex>
       <Box padding={1} w={"100vw"}>
-        <Text fontWeight={500} fontSize={15}>Good Vibes Only.</Text>
+        <Text fontWeight={500} fontSize={15}>
+          Good Vibes Only.
+        </Text>
       </Box>
       <Box padding={1} mt={2} w={"100vw"} h={"70%"} display={"flex"}>
         <Image

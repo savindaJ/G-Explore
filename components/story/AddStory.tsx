@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
     borderColor: "black",
     borderWidth: 2,
     position: "relative",
-    display:'flex',
-    justifyContent:'center',
-    alignItems:'center',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   bellPosition: {
     fontSize: 20,
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     width: 20,
     height: 20,
-    borderRadius: 50
+    borderRadius: 50,
   },
 });

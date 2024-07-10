@@ -118,13 +118,13 @@ export default function PostSection() {
 
   return (
     <ScrollView
-    w={"100vw"}
-    h={'70%'}
+      w={"100vw"}
+      h={"70%"}
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
     >
       <VStack space={2} alignItems="center">
-        {postList.map((post,key) => (
+        {postList.map((post, key) => (
           <PostConp title={post.title} content={post.content} key={key} />
         ))}
       </VStack>
