@@ -15,10 +15,12 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 50,
-    backgroundColor: "#FFC502",
     borderColor: "black",
     borderWidth: 2,
     position: "relative",
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
   },
   bellPosition: {
     fontSize: 20,
