@@ -11,7 +11,6 @@ export default function RootLayout() {
           name="following"
           options={{ title: "following", animation: "slide_from_right" }}
         />
-        {/* <Stack.Screen name="index" options={{ title: 'G Explore' ,animation: 'slide_from_right'}} /> */}
       </Stack>
     </NativeBaseProvider>
   );

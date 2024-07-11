@@ -22,7 +22,7 @@ export default function NavBar() {
         justifyContent="space-between"
         w="100%"
         position={"fixed"}
-        bottom={-22}
+        bottom={0}
       >
         <HStack
           display={"flex"}
