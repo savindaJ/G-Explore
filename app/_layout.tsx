@@ -8,8 +8,8 @@ export default function RootLayout() {
     <NativeBaseProvider>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen
-          name="followers"
-          options={{ title: "followers", animation: "slide_from_right" }}
+          name="following"
+          options={{ title: "following", animation: "slide_from_right" }}
         />
         {/* <Stack.Screen name="index" options={{ title: 'G Explore' ,animation: 'slide_from_right'}} /> */}
       </Stack>

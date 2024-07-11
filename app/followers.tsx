@@ -17,6 +17,7 @@ import {
   VStack,
 } from "native-base";
 import React from "react";
+import { TouchableOpacity } from "react-native";
 
 export default function followers() {
   return (
@@ -32,12 +33,48 @@ export default function followers() {
         flexDirection={"row"}
         justifyContent={"space-around"}
       >
-        <Text fontWeight={700} fontSize={20} textAlign={"center"}>
-          Followers.
-        </Text>
-        <Text fontWeight={700} fontSize={20} textAlign={"center"}>
-          Following
-        </Text>
+        <TouchableOpacity
+          style={{
+            backgroundColor: "transparent",
+            padding: 10,
+            borderRadius: 10,
+          }}
+          onPress={() => {
+            alert("Button pressed!");
+            console.log("Button pressed!");
+          }}
+        >
+          <Text
+            style={{
+              color: "black",
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Followers
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: "transparent",
+            padding: 10,
+            borderRadius: 10,
+          }}
+          onPress={() => {
+            alert("Button pressed!");
+            console.log("Button pressed!");
+          }}
+        >
+          <Text
+            style={{
+              color: "black",
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Following
+          </Text>
+        </TouchableOpacity>
       </Box>
       <Box display={"flex"} justifyContent={"center"}>
         <Input
@@ -214,27 +251,6 @@ const Example = () => {
                   {item.recentText}
                 </Text>
               </VStack>
-              <VStack>
-                <Button
-                onPress={()=>{
-                  axios.get('https://api.coindesk.com/v1/bpi/currentprice.json').then((res)=>{
-                    console.log(res.data)
-                  }).catch((err)=>{
-                    console.log(err)
-                  });
-                }}
-                position={'absolute'}
-                  m={"auto"}
-                  size="sm"
-                  variant="outline"
-                  _dark={{
-                    borderColor: "muted.50",
-                  }}
-                  borderColor="muted.800"
-                >
-                  Follow
-                </Button>
-              </VStack>
               <Spacer />
               <Text
                 fontSize="xs"
@@ -246,6 +262,27 @@ const Example = () => {
               >
                 {item.timeStamp}
               </Text>
+              <Button
+                style={{
+                  backgroundColor: "#0E0D6B",
+                  padding: 10,
+                  borderRadius: 10,
+                  position: "absolute",
+                  right: 0,
+                }}
+                onPress={() => {
+                  axios
+                    .get("https://api.coindesk.com/v1/bpi/currentprice.json")
+                    .then((res) => {
+                      console.log(res.data);
+                    })
+                    .catch((err) => {
+                      console.log(err);
+                    });
+                }}
+              >
+                Message.
+              </Button>
             </HStack>
           </Box>
         )}
