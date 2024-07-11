@@ -5,7 +5,7 @@ import { Button, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function profile() {
   return (
-    <View borderColor={"black"}>
+    <View borderColor={"black"} w={"100%"} h={"100%"}>
       <Box background={"blue"}>
         <Image
           borderColor={"black"}
@@ -37,7 +37,7 @@ export default function profile() {
           Savinda Jayasekara
         </Text>
         <Text color={"gray"} fontSize={16} textAlign={"center"}>
-          Good Vibes Only !
+          Good Vibes Only 🌟
         </Text>
       </Box>
       <Box

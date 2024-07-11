@@ -19,9 +19,10 @@ export default function NavBar() {
       <Box
         bg="blue"
         color={"black"}
+        backgroundColor={"white"}
         justifyContent="space-between"
         w="100%"
-        position={"fixed"}
+        position={"absolute"}
         bottom={0}
       >
         <HStack
