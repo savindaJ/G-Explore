@@ -11,7 +11,7 @@ import {
   Box,
   StatusBar,
 } from "native-base";
-import { MaterialIcons } from "@expo/vector-icons";
+import { FontAwesome, MaterialIcons } from "@expo/vector-icons";
 
 export default function NavBar() {
   return (
@@ -32,14 +32,14 @@ export default function NavBar() {
         >
           <IconButton
             icon={
-              <Icon as={MaterialIcons} name="home" size="lg" color="#0E0D6B" />
+              <Icon as={FontAwesome} name="home" size="lg" color="#0E0D6B" />
             }
           />
           <IconButton
             icon={
               <Icon
-                as={MaterialIcons}
-                name="search"
+                as={FontAwesome}
+                name="user"
                 size="lg"
                 color="#0E0D6B"
               />
@@ -47,17 +47,7 @@ export default function NavBar() {
           />
           <IconButton
             icon={
-              <Icon as={MaterialIcons} name="home" size="lg" color="#0E0D6B" />
-            }
-          />
-          <IconButton
-            icon={
-              <Icon as={MaterialIcons} name="home" size="lg" color="#0E0D6B" />
-            }
-          />
-          <IconButton
-            icon={
-              <Icon as={MaterialIcons} name="home" size="lg" color="#0E0D6B" />
+              <Icon as={FontAwesome} name="wrench" size="lg" color="#0E0D6B" />
             }
           />
         </HStack>

@@ -21,7 +21,7 @@ import { TouchableOpacity } from "react-native";
 
 export default function followers() {
   return (
-    <View>
+    <View h={"100%"}>
       <HeaderText />
       <Box
         w={"95%"}
@@ -51,7 +51,7 @@ export default function followers() {
               fontWeight: "bold",
             }}
           >
-            Followers
+            Followers.
           </Text>
         </TouchableOpacity>
         <TouchableOpacity

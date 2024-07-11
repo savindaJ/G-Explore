@@ -7,7 +7,7 @@ export default function RootLayout() {
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="parts"
-          options={{ title: "parts", animation: "slide_from_right" }}
+          options={{ title: "Explore", animation: "slide_from_right" }}
         />
       </Stack>
     </NativeBaseProvider>

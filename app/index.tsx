@@ -6,7 +6,7 @@ import { View } from "native-base";
 
 export default function Index() {
   return (
-    <View w={"100vw"} h={"100vh"}>
+    <View w={"100vw"} h={"100%"}>
       <HeaderText />
       <StorySection />
       <PostSection />
