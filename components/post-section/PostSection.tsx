@@ -11,6 +11,7 @@ import {
 import PostConp from "../post/PostComp";
 
 export default function PostSection() {
+
   const { colors } = useTheme();
 
   const postList = [
@@ -18,28 +19,28 @@ export default function PostSection() {
       id: 1,
       title: "Exploring the Mountains",
       content: "Discover the beauty of the mountain ranges and enjoy a peaceful retreat.",
-      image: "https://images.unsplash.com/photo-1573496799519-00a0daee8eab",
+      image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
       name: "John Doe",
     },
     {
       id: 2,
       title: "The Art of Cooking",
       content: "Learn the secrets of gourmet cooking from top chefs.",
-      image: "https://images.unsplash.com/photo-1533612608997-212b06408bba",
+      image: "https://images.unsplash.com/photo-1525923838299-2312b60f6d69",
       name: "Jane Smith",
     },
     {
       id: 3,
       title: "A Day at the Beach",
       content: "Relax by the shore and soak up the sun at the world's best beaches.",
-      image: "https://images.unsplash.com/photo-1517495306984-9dcd1d63b157",
+      image: "https://images.unsplash.com/photo-1506748686214-2e7b7e14a450",
       name: "Alice Johnson",
     },
     {
       id: 4,
       title: "Tech Innovations 2024",
       content: "Explore the latest advancements in technology and how they're shaping the future.",
-      image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df",
+      image: "https://images.unsplash.com/photo-1506748686214-2d8b7e1e450",
       name: "Bob Brown",
     },
     {
@@ -154,16 +155,11 @@ export default function PostSection() {
       image: "https://images.unsplash.com/photo-1504198453319-5ce911bafcde",
       name: "Rachel Scott",
     },
-  ];
+  ];1
   
 
   return (
-    <ScrollView
-      w={"100%"}
-      h={"70%"}
-      showsVerticalScrollIndicator={false}
-      showsHorizontalScrollIndicator={false}
-    >
+    <ScrollView w={"100%"} h={"70%"} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
       <VStack space={2} alignItems="center">
         {postList.map((post, key) => (
           <PostConp title={post.title} content={post.content} image={post.image} key={key} />
