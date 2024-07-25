@@ -12,7 +12,7 @@ export default function HeaderText() {
       >
         G Explore
       </Text>
-      <Box display={"flex"} mt={5} flexDirection={"row"}>
+      <Box display={"flex"} mt={2} flexDirection={"row"}>
         
         <Link href="/login" style={styles.bell}>
           <FontAwesome name="user" style={styles.bell} />

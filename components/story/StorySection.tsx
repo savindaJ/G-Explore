@@ -50,6 +50,6 @@ const styles = StyleSheet.create({
   },
   story: {
     marginLeft: 10,
-    padding: 10,
+    padding: 5,
   },
 });
