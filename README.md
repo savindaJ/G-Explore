@@ -1,1 +1,0 @@
-<h1>Simple Clone Mobile App !</h1>
